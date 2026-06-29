@@ -51,6 +51,12 @@ MIG 프로파일 조회
 - 인프라: OpenStack (Nova, libvirt)
 - 언어: Go
 
+## 테스트 완료 환경
+
+- NVIDIA A100
+- NVIDIA H100
+- NVIDIA B300
+
 ## 사용법
 
 ```bash
