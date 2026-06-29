@@ -25,6 +25,11 @@ OpenStack 환경에서 GPU를 VM에 할당하는 방식은 Passthrough와 MIG(md
 MIG 방식에서는 VM이 삭제된 후에도 mdev 장치가 sysfs에 남는 orphan(ghost) 문제가 발생하며,
 이를 수동으로 찾고 정리하는 과정이 번거로워 직접 툴을 만들었습니다.
 
+OpenStack 기반 Private Cloud에서 mdev 방식 MIG 인스턴스 운영 중,
+orphan mdev가 수동으로 해제되지 않아 GPU 자원이 낭비되는 문제 발생.
+현황 파악과 해제 명령어 생성을 자동화하는 TUI 도구를 개발.
+
+
 ## 운영 플로우
 MIG 프로파일 조회
 → GI/CI 생성
